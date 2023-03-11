@@ -1,13 +1,132 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.card-login {
+  width: 400px;
+  border: 1px solid black;
+  padding: 2%;
+}
+
+.btr-login {
+  border-top-right-radius: 5px !important;
+}
+
+.btl-login {
+  border-top-left-radius: 5px !important;
+}
+
+.btn-dark-login {
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  margin-top: 15%;
+}
+
+.btn-dark-login:hover {
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.nav-pills {
+  display: table !important;
+  width: 100%;
+}
+
+.nav-pills .nav-link {
+  border-radius: 0px;
+  border-bottom: 1px solid #0d6efd40;
+}
+
+.nav-item-login {
+  display: table-cell;
+  background: #0d6efd2e;
+}
+
+.form-login {
+  padding: 10px;
+  height: 300px;
+}
+
+.form-login input {
+  margin-bottom: 12px;
+  border-radius: 3px;
+}
+
+.form-login input:focus {
+  box-shadow: none;
+}
+
+.form button {
+  margin-top: 20px;
+}
+.footertop {
+  margin-top: 5%;
+}
+
+.footertext {
+  font-size: 15px;
+}
+.footer-pos {
+  
+  width: 100%;
+ 
+}
+
+
+
+.loadingSpinnerContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadingSpinner {
+  width: 64px;
+  height: 64px;
+  border: 8px solid;
+  border-color: #000 transparent #555 transparent;
+  border-radius: 50%;
+  animation: spin 1.2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 600px) {
+  .form {
+    width: 90%;
+  }
+
+  .heading h1 {
+    font-size: 2rem;
+  }
+
+  .heading p {
+    font-size: 1.5rem;
+  }
 }
